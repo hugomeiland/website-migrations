@@ -14,82 +14,134 @@ scripts:
 
     <div class="monitor-block">
       <h2>Recente metingen</h2>
-      <div class="monitor-grid">
-        <div class="monitor-card">
-          <h3>Activiteit over de laatste dagen</h3>
-          <img src="https://spaceweather.gfz-potsdam.de/fileadmin/kpindex/ql_bar.gif" alt="Kp-index balk van GFZ Potsdam" loading="lazy">
-          <p>Hieronder zie je de activiteit over de laatste dagen. Het is de KP-index over blokken van 3 uur. Die is gebaseerd op de uitslag van magnetogrammen.<br>Groen is een lage activiteit met lokaal noorderlicht op hoge breedtegraden. Geel is een verhoogde activiteit. En rood is een sterke activiteit die ook in Nederland zichtbaar kan zijn.</p>
-          <p><em>Bron: <a href="https://spaceweather.gfz-potsdam.de/" rel="noopener">https://spaceweather.gfz-potsdam.de</a></em></p>
-        </div>
-        <div class="monitor-card">
-          <h3>De maanfase op dit moment</h3>
-          <img class="img-light" src="https://www.moonmodule.com/cs/dm/hn.gif" alt="Huidige maanfase" loading="lazy">
-          <p>Deze afbeelding laat de maanfase op dit moment zien.</p>
-          <p><em>Bron: Moon Connection.</em></p>
-        </div>
+      <h3 class="monitor-subhead">Activiteit over de laatste dagen</h3>
+      <div class="prose monitor-prose">
+        <p>Hieronder zie je de activiteit over de laatste dagen. Het is de KP-index over blokken van 3 uur. Die is gebaseerd op de uitslag van magnetogrammen.<br>Groen is een lage activiteit met lokaal noorderlicht op hoge breedtegraden. Geel is een verhoogde activiteit. En rood is een sterke activiteit die ook in Nederland zichtbaar kan zijn.</p>
+        <p><em>Bron: <a href="https://spaceweather.gfz-potsdam.de/" rel="noopener">https://spaceweather.gfz-potsdam.de</a></em></p>
       </div>
+      <figure class="monitor-figure">
+        <img src="https://spaceweather.gfz-potsdam.de/fileadmin/kpindex/ql_bar.gif" alt="Kp-index balk van GFZ Potsdam" loading="lazy">
+      </figure>
     </div>
 
     <div class="monitor-block">
       <h2>Nu</h2>
-      <div class="monitor-grid">
-        <div class="monitor-card full">
-          <h3>Activiteit laatste 24 uur tot nu</h3>
-          <img src="https://flux.phys.uit.no/cgi-bin/mkstackplot.cgi?GifOnly&cust=&NoJump&comp=H&site=nal1a&site=lyr2a&site=hop1a&site=bjn1a&site=nor1a&site=sor1a&site=tro2a&site=and1a&site=rst1a&site=don1a&site=rvk1a&site=dob1a&site=sol1a&site=har1a&site=kar1a&site=roe1d&site=wik1a&site=wng1a&site=ngk1a" alt="Magnetometer stackplot Tromsø Geophysical Observatory" loading="lazy">
-          <img class="monitor-legend" src="{{ '/assets/img/stations-legend.jpg' | relative_url }}" alt="Legenda magnetometerstations" loading="lazy">
-          <p>In Scandinavië staat een reeks magnetometers op verschillende breedtegraden. De uitslag wordt weergegeven in onderstaand diagram. Als de meter veel uitslaat, is er activiteit en waarschijnlijk ook noorderlicht. Ook gaat noorderlicht op een bepaalde plaats vaak gepaard met een uitslag van dat station naar beneden. Hoe groter de lijn afwijkt van normaal, des te sterker het noorderlicht.</p>
-          <p>Zo kun je dus niet alleen zien hoe groot de verstoring van het magnetisch veld is, maar ook hoe zuidelijk deze storing komt. Kijk op het kaartje rechts waar elk station ligt. <em>wng</em> en <em>ngk</em> zijn de stations Wingst en Niemegk in Duitsland en zijn qua activiteit vegelijkbaar met achtereenvolgens de Wadden en Zuid-Limburg. Station <em>wic</em> ligt in Wenen.</p>
-          <p>Let op de schaalverdeling rechtsboven in het diagram. Bij grote geomagnetische activiteit wordt de schaal van het diagram kleiner. Bij actief noorderlicht slaat een curve meestal wel uit tot rond de 400-800 nT.</p>
-          <p>Zodra het station Dombås (DOB) reageert, is het noorderlicht in de praktijk vaak al vanaf de Nederlandse noordkust (dus ook op de Wadden) zichtbaar laag boven de noordelijke horizon, in ieder geval fotografisch.</p>
-          <p><em>Bron: <a href="https://geo.phys.uit.no/" rel="noopener">Tromsø Geophysical Observatory</a> and <a href="https://www.space.dtu.dk/english" rel="noopener">DTU Space</a></em></p>
+      <h3 class="monitor-subhead">Activiteit laatste 24 uur tot nu</h3>
+      <div class="prose monitor-prose">
+        <p>In Scandinavië staat een reeks magnetometers op verschillende breedtegraden. De uitslag wordt weergegeven in onderstaand diagram. Als de meter veel uitslaat, is er activiteit en waarschijnlijk ook noorderlicht. Ook gaat noorderlicht op een bepaalde plaats vaak gepaard met een uitslag van dat station naar beneden. Hoe groter de lijn afwijkt van normaal, des te sterker het noorderlicht.</p>
+        <p>Zo kun je dus niet alleen zien hoe groot de verstoring van het magnetisch veld is, maar ook hoe zuidelijk deze storing komt. Kijk op het kaartje rechts waar elk station ligt. <em>wng</em> en <em>ngk</em> zijn de stations Wingst en Niemegk in Duitsland en zijn qua activiteit vegelijkbaar met achtereenvolgens de Wadden en Zuid-Limburg. Station <em>wic</em> ligt in Wenen.</p>
+        <p>Let op de schaalverdeling rechtsboven in het diagram. Bij grote geomagnetische activiteit wordt de schaal van het diagram kleiner. Bij actief noorderlicht slaat een curve meestal wel uit tot rond de 400-800 nT.</p>
+        <p>Zodra het station Dombås (DOB) reageert, is het noorderlicht in de praktijk vaak al vanaf de Nederlandse noordkust (dus ook op de Wadden) zichtbaar laag boven de noordelijke horizon, in ieder geval fotografisch.</p>
+        <p><em>Bron: <a href="https://geo.phys.uit.no/" rel="noopener">Tromsø Geophysical Observatory</a> and</em> <a href="https://www.space.dtu.dk/english" rel="noopener">DTU Space</a></p>
+      </div>
+
+      <div class="monitor-grid monitor-grid--stack">
+        <div class="monitor-card">
+          <img
+            src="https://flux.phys.uit.no/cgi-bin/mkstackplot.cgi?GifOnly&cust=&NoJump&comp=H&site=nal1a&site=lyr2a&site=hop1a&site=bjn1a&site=nor1a&site=sor1a&site=tro2a&site=and1a&site=rst1a&site=don1a&site=rvk1a&site=dob1a&site=sol1a&site=har1a&site=kar1a&site=roe1d&site=wik1a&site=wng1a&site=ngk1a"
+            alt="Magnetometer stackplot Tromsø Geophysical Observatory"
+            loading="lazy">
+        </div>
+        <div class="monitor-card monitor-card--legend">
+          <img src="{{ '/assets/img/stations-legend.jpg' | relative_url }}" alt="Legenda magnetometerstations" loading="lazy">
         </div>
       </div>
-    </div>
 
-    <div class="monitor-block">
-      <h2>Live beelden</h2>
-      <p>We hebben een all sky-camera’s verzameld die de nachtelijke hemel in Scandinavië live tonen op verschillende breedtegraden. Maar om de hoeveelheid dataverkeer wat te beperken, hebben we daar een aparte pagina voor aangemaakt: klik hier voor het overzicht van de camera’s.</p>
-    </div>
-
-    <div class="monitor-block">
-      <h2>Verwachting</h2>
-      <div class="monitor-grid">
-        <div class="monitor-card">
-          <h3>Kans op noorderlicht over ca. één uur</h3>
-          <img src="https://services.swpc.noaa.gov/images/animations/ovation/north/latest.jpg" alt="OVATION aurora forecast noordelijk halfrond" loading="lazy">
-          <p>Deze kaart geeft de noorderlicht-verwachting voor over ca. 30-90 minuten. De precieze tijdsduur staat rechtsboven (Forecast Lead Time). De informatie is gebaseerd op data van een satelliet (ACE) die iets dichter bij de zon staat dan de aarde. Die zit in het ruimteweer dat wij over 30-90 minuten krijgen. De zonnewind ‘waait’ immers van de zon naar ons toe.</p>
-          <p>Linksonder staat de betekenis van de verschillende kleuren.</p>
-          <p>Deze data en de kaart zelf komen van het NOAA Space Weather Prediction Center in Boulder, in de VS.</p>
-          <p>Je kunt zelf de data van de ACE-satelliet hier bekijken. Hieronder volgt wat uitleg over de verschillende grafieken.</p>
-          <img src="https://services.swpc.noaa.gov/images/ace-mag-swepam-24-hour.gif" alt="ACE magneetveld en zonnewind laatste 24 uur" loading="lazy">
-          <p><strong>Speed</strong> (geel): dit is de snelheid van de zonnewind en geeft aan hoe snel de geladen deeltjes van de zon naar de aarde toe bewegen.<br>
-          <strong>Density</strong> (oranje): de dichtheid laat het aantal geladen deeltjes per kubieke centimeter zien.<br>
-          <strong>Bt</strong> (wit): dit geeft de totale sterkte van het magneetveld bij de ACE satelliet weer.<br>
-          <strong>Bz</strong> (rood): het magneetveld rond de ACE-satelliet heeft een bepaalde richting, die wordt weergegeven in drie dimensies: Bx, By en Bz. De Bz-component loopt parallel aan de as van de noordpool naar de zuidpool en heeft de grootste invloed op de noorderlichtverwachting. Wanneer de Bz naar het noorden gericht is (positieve waarde in de grafiek), dan heeft het magneetveld van de geladen zonne-deeltjes dezelfde richting als die van de aarde en gebeurt er niet veel. Maar als de Bz naar het zuiden is gericht, dan is de richting van het magneetveld van de deeltjes tegengesteld aan die van de aarde. De magneetvelden verbinden dan met elkaar, waardoor de geladen deeltjes gemakkelijker onze dampkring binnenkomen. Een negatieve Bz is een voorwaarde voor goed zichtbaar noorderlicht en dus erg belangrijk.</p>
-          <p>De kans op noorderlicht neemt toe bij:</p>
-          <ul>
-            <li>een snellere zonnewind (speed &gt; 500 km/s),</li>
-            <li>een hogere dichtheid (density),</li>
-            <li>een grotere sterkte van het magneetveld (Bt &gt; 20 nT) en</li>
-            <li>een lage Bz-waarde (Bz &lt; -10 nT).</li>
-          </ul>
-          <p><em>Deze waarden maken deel uit van het zogenaamde ‘space weather’. Meer data vind je o.a. op het <a href="https://www.swpc.noaa.gov/communities/space-weather-enthusiasts" rel="noopener">dashboard</a> van het Space Weather Prediction Center.</em></p>
+      <div class="monitor-grid monitor-grid--moon">
+        <div class="monitor-card monitor-card--moon">
+          <a href="https://www.moonconnection.com/" rel="noopener">
+            <img src="https://www.moonmodule.com/cs/dm/hn.gif" alt="Huidige maanfase" width="212" height="136" loading="lazy">
+          </a>
         </div>
         <div class="monitor-card">
-          <h3>Kp komende drie dagen</h3>
-          <img src="https://cdn.polarlicht-vorhersage.de/kp_mid.png" alt="Kp-verwachting polarlicht-vorhersage" loading="lazy">
-          <p>De verwachte Kp voor de komende drie dagen in het gebied rond de poolcirkel. De Kp is een mate van verstoring van het geomagnetisch veld. Hoe meer storing, hoe groter de kans op poollicht en de intensiteit ervan. Groen = laag, rood/paars = hoog.</p>
-          <p><em>Het diagram komt van de website <a href="https://www.polarlicht-vorhersage.de/" rel="noopener">Polarlicht-vorhersage für Deutschland</a>. De data komen van het <a href="https://www.swpc.noaa.gov/" rel="noopener">NOAA Space Weather Prediction Center</a> in Boulder, in de VS.</em></p>
-          <div class="chart-wrap chart-wrap--compact" style="margin-top:1rem">
-            <canvas id="kp-chart" data-base="{{ site.baseurl }}" height="100" aria-label="Kp-verwachting grafiek"></canvas>
+          <h3 class="monitor-subhead">De maanfase op dit moment</h3>
+          <div class="prose monitor-prose">
+            <p>Deze afbeelding laat de maanfase op dit moment zien.</p>
+            <p><em>Bron: <a href="https://www.moonconnection.com/" rel="noopener">Moon Connection</a>.</em></p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="monitor-block">
+      <h2>Live beelden</h2>
+      <div class="monitor-grid monitor-grid--2">
+        <div class="monitor-card">
+          <div class="prose monitor-prose">
+            <p>We hebben een <em>all sky-</em>camera’s verzameld die de nachtelijke hemel in Scandinavië live tonen op verschillende breedtegraden. Maar om de hoeveelheid dataverkeer wat te beperken, hebben we daar een aparte pagina voor aangemaakt: <a href="{{ '/webcams/' | relative_url }}">klik hier voor het overzicht van de camera’s</a>.</p>
+          </div>
+        </div>
+        <div class="monitor-card">
+          <a href="{{ '/webcams/' | relative_url }}">
+            <img src="{{ '/assets/img/webcam-preview.png' | relative_url }}" alt="All-sky aurora camera Svalbard" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="monitor-block">
+      <h2>Verwachting</h2>
+
+      <div class="monitor-grid monitor-grid--2">
+        <div class="monitor-card">
+          <h3 class="monitor-subhead">Kans op noorderlicht over ca. één uur</h3>
+          <div class="prose monitor-prose">
+            <p>Deze kaart geeft de noorderlicht-verwachting voor over ca. 30-90 minuten. De precieze tijdsduur staat rechtsboven (Forecast Lead Time). De informatie is gebaseerd op data van een satelliet (ACE) die iets dichter bij de zon staat dan de aarde. Die zit in het ruimteweer dat wij over 30-90 minuten krijgen. De zonnewind ‘waait’ immers van de zon naar ons toe.</p>
+            <p>Linksonder staat de betekenis van de verschillende kleuren.</p>
+            <p><em>Deze data en de kaart zelf komen van het <a href="https://www.swpc.noaa.gov/" rel="noopener">NOAA Space Weather Prediction Center</a> in Boulder, in de VS.</em></p>
+          </div>
+        </div>
+        <div class="monitor-card">
+          <img src="https://services.swpc.noaa.gov/images/animations/ovation/north/latest.jpg" alt="OVATION aurora forecast noordelijk halfrond" loading="lazy">
+        </div>
+      </div>
+
+      <div class="monitor-grid monitor-grid--2">
+        <div class="monitor-card">
+          <img src="https://services.swpc.noaa.gov/images/ace-mag-swepam-24-hour.gif" alt="ACE magneetveld en zonnewind laatste 24 uur" loading="lazy">
+        </div>
+        <div class="monitor-card">
+          <div class="prose monitor-prose">
+            <p>Je kunt zelf de data van de ACE-satelliet <a href="https://www.swpc.noaa.gov/products/ace-real-time-solar-wind" rel="noopener">hier</a> bekijken. Hieronder volgt wat uitleg over de verschillende grafieken.</p>
+            <p><strong>Speed</strong> (geel): dit is de snelheid van de zonnewind en geeft aan hoe snel de geladen deeltjes van de zon naar de aarde toe bewegen.<br>
+            <strong>Density</strong> (oranje): de dichtheid laat het aantal geladen deeltjes per kubieke centimeter zien.<br>
+            <strong>Bt</strong> (wit): dit geeft de totale sterkte van het magneetveld bij de ACE satelliet weer.<br>
+            <strong>Bz</strong> (rood): het magneetveld rond de ACE-satelliet heeft een bepaalde richting, die wordt weergegeven in drie dimensies: Bx, By en Bz. De Bz-component loopt parallel aan de as van de noordpool naar de zuidpool en heeft de grootste invloed op de noorderlichtverwachting. Wanneer de Bz naar het noorden gericht is (positieve waarde in de grafiek), dan heeft het magneetveld van de geladen zonne-deeltjes dezelfde richting als die van de aarde en gebeurt er niet veel. Maar als de Bz naar het zuiden is gericht, dan is de richting van het magneetveld van de deeltjes tegengesteld aan die van de aarde. De magneetvelden verbinden dan met elkaar, waardoor de geladen deeltjes gemakkelijker onze dampkring binnenkomen. Een negatieve Bz is een voorwaarde voor goed zichtbaar noorderlicht en dus erg belangrijk.</p>
+            <p>De kans op noorderlicht neemt toe bij:</p>
+            <ul>
+              <li>een snellere zonnewind (speed &gt; 500 km/s),</li>
+              <li>een hogere dichtheid (density),</li>
+              <li>een grotere sterkte van het magneetveld (Bt &gt; 20 nT) en</li>
+              <li>een lage Bz-waarde (Bz &lt; -10 nT).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="monitor-note"><em>Deze waarden maken deel uit van het zogenaamde ‘space weather’. Meer data vind je o.a. op het <a href="https://www.swpc.noaa.gov/communities/space-weather-enthusiasts" rel="noopener">dashboard</a> van het Space Weather Prediction Center.</em></p>
+
+      <div class="monitor-grid monitor-grid--2">
+        <div class="monitor-card">
+          <h3 class="monitor-subhead">Kp komende drie dagen</h3>
+          <div class="prose monitor-prose">
+            <p>De verwachte Kp voor de komende drie dagen in het gebied rond de poolcirkel. De Kp is een mate van verstoring van het geomagnetisch veld. Hoe meer storing, hoe groter de kans op poollicht en de intensiteit ervan. Groen = laag, rood/paars = hoog.</p>
+            <p><em>Het diagram komt van de website <a href="https://www.polarlicht-vorhersage.de/" rel="noopener">Polarlicht-vorhersage für Deutschland</a>. De data komen van het <a href="https://www.swpc.noaa.gov/" rel="noopener">NOAA Space Weather Prediction Center</a> in Boulder, in de VS.</em></p>
+          </div>
+        </div>
+        <div class="monitor-card">
+          <img src="https://cdn.polarlicht-vorhersage.de/kp_mid.png" alt="Kp-verwachting polarlicht-vorhersage" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="monitor-block">
       <h2>Lange termijn verwachting</h2>
-      <p>Visuele weergave van de verwachte Kp-waarden voor de komende tijd. De grijsomlijnde balkjes geven de 45-dagen verwachting weer met een gemiddelde Kp-waarde per dag. Oorspronkelijk werden deze data weergegeven als Ap-waarden, maar via deze tabel hebben we ze omgerekend naar Kp-waarden om ze te kunnen vergelijken met andere verwachtingen. De gekleurde balkjes tonen de maximaal verwachte Kp-waarde per dag. Deze data worden elke maandag vrijgegeven en geven daardoor een vooruitzicht van 20 tot 27 dagen. Kp ≤ 3, Kp = 4, Kp ≥ 5. Deze grafieken zijn gebaseerd op data van het NOAA Space Weather Prediction Center in Boulder, VS en de U.S. Air Force via voornoemde website.</p>
+      <div class="chart-wrap">
+        <canvas id="kp-chart" data-base="{{ site.baseurl }}" height="100" aria-label="Kp-verwachting grafiek"></canvas>
+      </div>
+      <div class="prose monitor-prose" style="margin-top:1rem">
+        <p><em>Visuele weergave van de verwachte Kp-waarden voor de komende tijd. De grijsomlijnde balkjes geven de 45-dagen verwachting weer met een gemiddelde Kp-waarde per dag. Oorspronkelijk werden deze data weergegeven als Ap-waarden, maar <a href="https://www.spaceweatherlive.com/en/help/the-ap-index.html" rel="noopener">via deze tabel</a> hebben we ze omgerekend naar Kp-waarden om ze te kunnen vergelijken met andere verwachtingen. De gekleurde balkjes tonen de maximaal verwachte Kp-waarde per dag. Deze data worden elke maandag vrijgegeven en geven daardoor een vooruitzicht van 20 tot 27 dagen. <span style="color:#00ff00">Kp ≤ 3</span>, <span style="color:#ffcc00">Kp = 4</span>, <span style="color:#ff0000">Kp ≥ 5</span>. Deze grafieken zijn gebaseerd op data van het <a href="https://www.swpc.noaa.gov/" rel="noopener">NOAA Space Weather Prediction Center</a> in Boulder, VS en de U.S. Air Force via voornoemde website.</em></p>
+      </div>
     </div>
   </div>
 </section>

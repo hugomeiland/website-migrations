@@ -598,63 +598,92 @@ p { margin: 0 0 1em; }
 .page-hero p { color: rgba(255,255,255,0.88); margin: 0; max-width: 40rem; }
 
 /* —— Monitor —— */
-.monitor-intro {
-  color: #666;
-  max-width: 46rem;
-  margin-bottom: 1.75rem;
-}
 .monitor-block {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.75rem;
 }
 .monitor-block > h2 {
   color: #666;
   font-size: 22px;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
   border-bottom: 1px solid var(--line);
   padding-bottom: 0.4rem;
 }
+.monitor-subhead {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 0.85rem;
+}
+.monitor-prose {
+  max-width: none;
+  margin-bottom: 1rem;
+}
+.monitor-prose p,
+.monitor-prose li {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.monitor-figure {
+  margin: 0 0 0.5rem;
+}
+.monitor-figure img {
+  width: 100%;
+  max-width: 720px;
+  background: transparent;
+}
 .monitor-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
   gap: 1.5rem 2rem;
   align-items: start;
+  margin: 1rem 0 1.5rem;
 }
-.monitor-grid--3 {
-  grid-template-columns: repeat(3, 1fr);
+.monitor-grid--2 {
+  grid-template-columns: 1fr 1fr;
+}
+.monitor-grid--stack {
+  grid-template-columns: 3fr 1fr;
+}
+.monitor-grid--moon {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 .monitor-card {
   background: transparent;
   padding: 0;
-}
-.monitor-card h3,
-.monitor-card h1 {
-  color: #333;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 0 0.75rem;
-}
-.monitor-card p {
-  font-size: 13px;
-  color: #666;
-  margin: 0.6rem 0 0;
+  min-width: 0;
 }
 .monitor-card img {
   width: 100%;
   background: #111;
 }
-.monitor-card img.img-light {
+.monitor-card--legend img {
   background: transparent;
-  max-width: 240px;
+  width: 100%;
+  max-width: 280px;
+  margin-inline: auto;
 }
-.monitor-card.full { grid-column: 1 / -1; }
-.monitor-legend {
-  margin-top: 0.75rem;
-  max-width: 420px;
-  background: transparent !important;
+.monitor-card--moon img {
+  width: auto;
+  max-width: 212px;
+  background: transparent;
+  margin: 0 auto;
+}
+.monitor-note {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin: 0.5rem 0 1.75rem;
 }
 @media (max-width: 900px) {
-  .monitor-grid,
-  .monitor-grid--3 { grid-template-columns: 1fr; }
+  .monitor-grid--2,
+  .monitor-grid--stack,
+  .monitor-grid--moon {
+    grid-template-columns: 1fr;
+  }
+  .monitor-card--legend img {
+    max-width: 220px;
+  }
 }
 
 /* —— FAQ —— */
