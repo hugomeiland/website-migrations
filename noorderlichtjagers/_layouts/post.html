@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post-single">
+  <div class="container narrow">
+    <header class="post-header">
+      <p class="post-meta">
+        {% if page.author %}{{ page.author }} · {% endif %}
+        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d-%m-%Y' }}</time>
+        {% if page.categories %} · {{ page.categories | join: ', ' }}{% endif %}
+      </p>
+      <h1>{{ page.title }}</h1>
+    </header>
+    <div class="prose">
+      {{ content }}
+    </div>
+    <p class="back-link"><a href="{{ '/blog/' | relative_url }}">← Terug naar blog</a></p>
+  </div>
+</article>

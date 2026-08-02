@@ -1,0 +1,14 @@
+{% if include.compact %}
+<form class="alert-form alert-form--compact" action="{{ site.alert.action }}" method="post" accept-charset="UTF-8">
+{% else %}
+<form class="alert-form" action="{{ site.alert.action }}" method="post" accept-charset="UTF-8">
+{% endif %}
+  <input type="hidden" name="admin_id" value="{{ site.alert.admin_id }}">
+  <input type="hidden" name="trigger_code" value="{{ site.alert.trigger_code }}">
+  <input type="hidden" name="confirm" value="false">
+  <label class="sr-only" for="relation_firstName{% if include.compact %}_c{% endif %}">Voornaam</label>
+  <input type="text" id="relation_firstName{% if include.compact %}_c{% endif %}" name="relation_firstName" placeholder="Voornaam ..." required>
+  <label class="sr-only" for="relation_email{% if include.compact %}_c{% endif %}">E-mailadres</label>
+  <input type="email" id="relation_email{% if include.compact %}_c{% endif %}" name="relation_email" placeholder="E-mailadres ..." required>
+  <button type="submit">Versturen</button>
+</form>

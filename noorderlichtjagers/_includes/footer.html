@@ -1,0 +1,33 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Over Roy</h4>
+      <img class="footer-avatar" src="{{ '/assets/img/roy.jpg' | relative_url }}" alt="Roy Keeris" width="80" height="80">
+      <p>Roy heeft veel ervaring met noorderlicht in Nederland en was eerder al actief met een website over poollicht in onze streken.</p>
+    </div>
+    <div>
+      <h4>Over Toine</h4>
+      <img class="footer-avatar" src="{{ '/assets/img/toine.jpg' | relative_url }}" alt="Toine Westen" width="80" height="80">
+      <p>Toine fotografeert Lady Aurora vooral in Scandinavië — Lofoten en IJsland — en begeleidt noorderlichtreizen.</p>
+    </div>
+    <div>
+      <h4>Over Hugo</h4>
+      <img class="footer-avatar" src="{{ '/assets/img/hugo.jpg' | relative_url }}" alt="Hugo Meiland" width="80" height="80">
+      <p>Hugo zorgt voor het automatisch verzamelen en weergeven van de data, op de site en in de app.</p>
+    </div>
+    <div>
+      <h4>Over noorderlichtjagers</h4>
+      <p>Toine Westen, Roy Keeris en Hugo Meiland zetten deze site op om kennis en enthousiasme over het noorderlicht te delen.</p>
+    </div>
+    <div>
+      <h4>Noorderlicht alert</h4>
+      <p>Laat je gegevens achter, dan sturen we een berichtje als er kans is op aurora borealis in Nederland.</p>
+      {% include alert-form.html compact=true %}
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© {{ 'now' | date: '%Y' }} Noorderlichtjagers · Statische GitHub Pages template</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,71 @@
+---
+layout: default
+title: Monitor
+description: Recente metingen, live beelden en Kp-verwachtingen voor noorderlicht.
+permalink: /monitor/
+scripts:
+  - https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js
+  - /assets/js/aurora-chart.js
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Noorderlicht monitor</h1>
+    <p>Recente metingen, nu en verwachtingen — dezelfde bronnen als op de live site (NOAA, GFZ, polarlicht-vorhersage).</p>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <h2>Recente metingen</h2>
+    <div class="monitor-grid">
+      <div class="monitor-card full">
+        <h3>Activiteit over de laatste dagen</h3>
+        <img src="https://spaceweather.gfz-potsdam.de/fileadmin/kpindex/ql_bar.gif" alt="Kp-index balk van GFZ Potsdam" loading="lazy">
+      </div>
+      <div class="monitor-card">
+        <h3>Activiteit laatste 24 uur (ACE)</h3>
+        <img src="https://services.swpc.noaa.gov/images/ace-mag-swepam-24-hour.gif" alt="ACE magneetveld en zonnewind laatste 24 uur" loading="lazy">
+      </div>
+      <div class="monitor-card">
+        <h3>De maanfase op dit moment</h3>
+        <img src="https://www.moonmodule.com/cs/dm/hn.gif" alt="Huidige maanfase" loading="lazy" style="max-width:220px;margin:0 auto;background:transparent">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--mist">
+  <div class="container">
+    <h2>Nu</h2>
+    <div class="monitor-grid">
+      <div class="monitor-card full">
+        <h3>Kans op noorderlicht over ca. één uur (OVATION)</h3>
+        <img src="https://services.swpc.noaa.gov/images/animations/ovation/north/latest.jpg" alt="OVATION aurora forecast noordelijk halfrond" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <h2>Verwachting</h2>
+    <div class="monitor-grid">
+      <div class="monitor-card">
+        <h3>Kp komende drie dagen</h3>
+        <img src="https://cdn.polarlicht-vorhersage.de/kp_mid.png" alt="Kp-verwachting polarlicht-vorhersage" loading="lazy">
+      </div>
+      <div class="monitor-card">
+        <h3>Eigen Kp-grafiek (CSV)</h3>
+        <div class="chart-wrap">
+          <canvas id="kp-chart" data-base="{{ site.baseurl }}" height="120" aria-label="Kp-verwachting grafiek"></canvas>
+        </div>
+      </div>
+      <div class="monitor-card full">
+        <h3>Magnetometer-stack (Noorwegen)</h3>
+        <img src="http://flux.phys.uit.no/cgi-bin/mkstackplot.cgi?GifOnly&cust=&NoJump&comp=H&site=nal1a&site=lyr2a&site=hop1a&site=bjn1a&site=nor1a&site=sor1a&site=tro2a&site=and1a&site=rst1a&site=don1a&site=rvk1a&site=dob1a&site=sol1a&site=har1a&site=kar1a&site=roe1d&site=wik1a&site=wng1a&site=ngk1a" alt="Magnetometer stackplot Tromsø Geophysical Observatory" loading="lazy">
+        <p class="chart-note">Externe GIF — kan op GitHub Pages via HTTP soms geblokkeerd worden; overweeg een HTTPS-proxy of snapshot-cron.</p>
+      </div>
+    </div>
+  </div>
+</section>

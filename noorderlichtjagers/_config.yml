@@ -1,0 +1,39 @@
+title: Noorderlichtjagers
+description: Informatie, tips en monitoring over het noorderlicht (aurora borealis)
+url: "" # e.g. https://USERNAME.github.io
+# GitHub Actions overrides this with the repo Pages base path.
+# For a dedicated repo, use "". For this monorepo deploy, expect "/website-migrations".
+baseurl: ""
+lang: nl-NL
+
+# Alert signup (e-act) — same endpoint as the live WordPress site
+alert:
+  action: "https://www.e-act.nl/ah/action"
+  admin_id: "1258"
+  trigger_code: "SUBSCR_1607636545901"
+
+# Social
+social:
+  twitter: "https://twitter.com/Noorderlichtja1"
+  facebook: "https://www.facebook.com/noorderlichtjagers"
+  instagram: "https://www.instagram.com/noorderlichtjagers"
+
+plugins: []
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .github
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:title/

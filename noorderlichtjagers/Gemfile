@@ -1,0 +1,8 @@
+source "https://rubygems.org"
+
+gem "github-pages", group: :jekyll_plugins
+gem "webrick", "~> 1.8"
+# Ruby 3.4+ stdlib gems (harmless on 3.3 / GitHub Actions)
+gem "csv"
+gem "logger"
+gem "base64"

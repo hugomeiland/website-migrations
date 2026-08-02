@@ -1,0 +1,43 @@
+---
+layout: default
+title: Contact
+description: Neem contact op met de noorderlichtjagers.
+permalink: /contact/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Contact</h1>
+    <p>Hey, leuk dat je contact met ons op wilt nemen.</p>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <div class="prose" style="max-width:36rem;margin-bottom:2rem">
+      <p>Wij krijgen veel vragen over waar en wanneer het noorderlicht te zien is in Nederland. Meld je dan aan voor ons <a href="{{ '/' | relative_url }}">noorderlicht alert</a>. Heb je een andere vraag? Kijk eerst bij de <a href="{{ '/faq/' | relative_url }}">FAQ</a>.</p>
+      <p>Hartelijke groeten,<br>Toine en Roy</p>
+    </div>
+
+    <!--
+      GitHub Pages heeft geen server-side form handler.
+      Opties: Formspree, Basin, Netlify Forms, of mailto.
+      Vervang action hieronder door je Formspree-endpoint.
+    -->
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div>
+        <label for="name">Naam</label>
+        <input id="name" name="name" type="text" placeholder="Naam" required>
+      </div>
+      <div>
+        <label for="email">E-mailadres</label>
+        <input id="email" name="email" type="email" placeholder="E-mailadres" required>
+      </div>
+      <div>
+        <label for="message">Bericht</label>
+        <textarea id="message" name="message" placeholder="Bericht" required></textarea>
+      </div>
+      <button class="btn" type="submit">Verzenden</button>
+    </form>
+  </div>
+</section>
