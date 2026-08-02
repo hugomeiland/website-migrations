@@ -8,67 +8,98 @@ scripts:
 permalink: /
 ---
 
-<section class="section section--navy alert-hero">
-  <div class="container">
-    <h1>Noorderlicht alert</h1>
-    <p class="lead">Wil jij een mailtje ontvangen wanneer er kans is op noorderlicht in Nederland? Vul dan even je voornaam en e-mailadres in.</p>
-    {% include alert-form.html %}
-  </div>
-</section>
-
-<section class="section section--mist">
-  <div class="container">
-    <h2 class="section-title">Kp komende drie dagen</h2>
-    <div class="chart-wrap">
-      <canvas id="kp-chart" data-base="{{ site.baseurl }}" height="80" aria-label="Kp-verwachting grafiek"></canvas>
-    </div>
-    <p class="chart-note">
-      Gebaseerd op data van het
-      <a href="https://www.swpc.noaa.gov/" rel="noopener">NOAA Space Weather Prediction Center</a>.
-      CSV-bestanden in <code>/data</code> kun je met een cron bijwerken.
-    </p>
-  </div>
-</section>
-
-<section class="section section--white">
-  <div class="container">
-    <h2 class="section-title">Nieuwste blogs</h2>
-    <div class="blog-grid">
-      {% assign posts = site.posts | slice: 0, 2 %}
-      {% for post in posts %}
-      <a class="blog-card" href="{{ post.url | relative_url }}" style="background-image:url('{{ post.image | default: '/assets/img/blog-1.jpg' | relative_url }}')">
-        <div class="blog-card-body">
-          <h3>{{ post.title }}</h3>
-          <p class="meta">{% if post.author %}{{ post.author }} · {% endif %}{{ post.date | date: '%Y-%m-%d' }}{% if post.categories %} · {{ post.categories | first }}{% endif %}</p>
-          <span class="btn-ghost">Lees meer</span>
-        </div>
+{# —— Hero: 3 cols like live Divi row (ovation | copy | form) —— #}
+<section class="home-hero">
+  <div class="container home-hero__grid">
+    <div class="home-hero__map">
+      <a href="{{ '/monitor/' | relative_url }}">
+        <img
+          src="https://services.swpc.noaa.gov/images/animations/ovation/north/latest.jpg"
+          alt="NOAA OVATION aurora forecast"
+          width="400"
+          height="400"
+          loading="eager">
       </a>
-      {% endfor %}
+      <p class="home-hero__source"><em>Bron: <a href="https://www.swpc.noaa.gov/" rel="noopener">NOAA Space Weather Prediction Center</a>.</em></p>
+    </div>
+
+    <div class="home-hero__copy">
+      <h1><strong>Noorderlicht alert</strong></h1>
+      <p>Noorderlicht is zeldzaam in Nederland. Maar ook hier is het zeker mogelijk om het poollicht te zien, als je weet wanneer je moet kijken.</p>
+      <p><strong>Wil jij een mailtje ontvangen wanneer er kans is op noorderlicht in Nederland?</strong></p>
+      <p>Vul dan even je voornaam en e-mailadres in, zodat we weten waar we het berichtje naartoe mogen sturen.</p>
+    </div>
+
+    <div class="home-hero__form">
+      {% include alert-form.html stacked=true %}
     </div>
   </div>
 </section>
 
-<section class="section team-band" style="background-image:url('{{ '/assets/img/team-bg.jpg' | relative_url }}')">
-  <div class="container">
+{# —— Main trio: Kp | blogs | twitter —— #}
+<section class="section section--white home-main">
+  <div class="container home-main__grid">
+    <div class="home-col">
+      <h2>Kp komende drie dagen</h2>
+      <figure class="kp-figure">
+        <img src="https://cdn.polarlicht-vorhersage.de/kp_mid.png" alt="Kp-verwachting polarlicht-vorhersage" loading="lazy">
+      </figure>
+      <p class="home-col__note">De diagrammen komen van de website Polarlicht-vorhersage für Deutschland. De data komen van het <a href="https://www.swpc.noaa.gov/" rel="noopener">NOAA Space Weather Prediction Center</a> in Boulder, in de VS.</p>
+      <div class="chart-wrap chart-wrap--compact">
+        <canvas id="kp-chart" data-base="{{ site.baseurl }}" height="100" aria-label="Kp-verwachting grafiek"></canvas>
+      </div>
+    </div>
+
+    <div class="home-col">
+      <h2>Nieuwste blogs</h2>
+      <div class="blog-stack">
+        {% assign posts = site.posts | slice: 0, 2 %}
+        {% for post in posts %}
+        <a class="blog-card" href="{{ post.url | relative_url }}" style="background-image:url('{{ post.image | default: '/assets/img/blog-1.jpg' | relative_url }}')">
+          <div class="blog-card-body">
+            <h3>{{ post.title }}</h3>
+            <p class="meta">door {% if post.author %}{{ post.author }}{% endif %} | {{ post.date | date: '%Y-%m-%d' }}{% if post.categories %} | {{ post.categories | first }}{% endif %}</p>
+            <span class="btn-ghost">Lees meer</span>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="home-col">
+      <h2>Laatste nieuws via Twitter</h2>
+      <p class="twitter-fallback">
+        <a href="{{ site.social.twitter }}" rel="noopener">Tweets by Noorderlichtja1</a>
+      </p>
+      <a class="twitter-embed-link" href="{{ site.social.twitter }}" rel="noopener">Volg @Noorderlichtja1 op X ››</a>
+    </div>
+  </div>
+</section>
+
+{# —— Team band —— #}
+<section class="team-band" style="background-image:url('{{ '/assets/img/team-bg.jpg' | relative_url }}')">
+  <div class="container team-band__inner">
     <h2>Noorderlichtjagers</h2>
-    <p class="lead">Toine Westen, Roy Keeris en Hugo Meiland zijn de noorderlichtjagers die deze website hebben opgezet. Roy heeft veel ervaring met noorderlicht in Nederland. Toine fotografeert Lady Aurora vooral in Scandinavië. Hugo zet de data om naar begrijpelijke verwachtingen.</p>
-    <p class="lead">Hier vind je uitleg over het noorderlicht, tips voor reizen en fotografie, en een monitor met de belangrijkste voorspellers.</p>
+    <p>Toine Westen, Roy Keeris en Hugo Meiland zijn de noorderlichtjagers die deze website hebben opgezet.</p>
+    <p>Roy heeft veel ervaring met noorderlicht in Nederland. Toine heeft Lady Aurora al vaak mogen fotograferen in Scandinavië, vooral op de Lofoten en IJsland. En Hugo is een kei in het omzetten van gortdroge getallen naar visuele noorderlichtverwachtingen.</p>
+    <p>Op deze website vind je informatie over wat noorderlicht nou eigenlijk is. Daarnaast geven we tips over het reizen naar en fotograferen van het poollicht (ook wel aurora borealis genoemd). En we hebben een monitor-pagina met de belangrijkste voorspellers voor noorderlicht op verschillende geografische breedtegraden.</p>
     <ul class="social-row">
-      <li><a href="{{ site.social.twitter }}" rel="noopener">X</a></li>
-      <li><a href="{{ site.social.facebook }}" rel="noopener">f</a></li>
-      <li><a href="{{ site.social.instagram }}" rel="noopener">ig</a></li>
+      <li><a class="follow-btn" href="{{ site.social.twitter }}" rel="noopener">Volgen</a></li>
+      <li><a class="follow-btn" href="{{ site.social.facebook }}" rel="noopener">Volgen</a></li>
+      <li><a class="follow-btn" href="{{ site.social.instagram }}" rel="noopener">Volgen</a></li>
     </ul>
   </div>
 </section>
 
+{# —— Quick links —— #}
 <section class="section section--white">
   <div class="container">
-    <h2 class="section-title">Ga direct naar ››</h2>
+    <h2 class="section-title section-title--left">Ga direct naar ››</h2>
     <div class="tile-grid">
       <a class="tile" href="{{ '/noorderlicht/' | relative_url }}" style="background-image:url('{{ '/assets/img/tile-noorderlicht.jpg' | relative_url }}')"><span>Noorderlicht</span></a>
       <a class="tile" href="{{ '/tips/' | relative_url }}" style="background-image:url('{{ '/assets/img/tile-tips.jpg' | relative_url }}')"><span>Tips</span></a>
       <a class="tile" href="{{ '/monitor/' | relative_url }}" style="background-image:url('{{ '/assets/img/tile-monitor.jpg' | relative_url }}')"><span>Monitor</span></a>
-      <a class="tile" href="{{ '/tips/' | relative_url }}#reizen" style="background-image:url('{{ '/assets/img/tile-reizen.jpg' | relative_url }}')"><span>Lange termijn</span></a>
+      <a class="tile" href="{{ '/tips/' | relative_url }}#reizen" style="background-image:url('{{ '/assets/img/tile-reizen.jpg' | relative_url }}')"><span>Lange termijn verwachting</span></a>
     </div>
   </div>
 </section>
@@ -77,8 +108,8 @@ permalink: /
   <div class="container">
     <div class="cta-block">
       <h2>Noorderlichtreizen</h2>
-      <p>Wil jij je kansen op het zien van noorderlicht vergroten door naar het hoge noorden te reizen? Ga mee op avontuur met noorderlichtjager Toine Westen en een kleine groep gelijkgestemden.</p>
-      <a class="btn" href="https://www.fotograferenindenatuur.nl/" rel="noopener">Meer over de fotoreizen ››</a>
+      <p>Wil jij je kansen op het zien van noorderlicht vergroten door naar het hoge noorden te reizen? En lijkt het je heerlijk om je een paar dagen helemaal onder te dompelen in ruige natuur en fotografie? Ga dan mee op avontuur met noorderlichtjager Toine Westen en een kleine groep (van maximaal vijf) gelijkgestemden!</p>
+      <a class="btn" href="https://www.fotograferenindenatuur.nl/" rel="noopener">Klik op deze knop om verder te lezen ››</a>
     </div>
   </div>
 </section>
