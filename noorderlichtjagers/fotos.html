@@ -7,12 +7,13 @@ permalink: /fotos/
 
 <section class="page-content">
   <div class="container">
-    <h1 class="page-content__title">Foto’s</h1>
-    <p style="max-width:40rem;margin-bottom:1.5rem;color:#666">Een selectie noorderlichtfoto’s — van sterke stormen tot subtiele gloed boven de Nederlandse horizon.</p>
+    <h1 class="page-content__title page-content__title--center"><strong>Foto’s</strong></h1>
     <div class="photo-grid">
-      {% for i in (1..12) %}
+      {% for photo in site.data.fotos %}
       <figure>
-        <img src="{{ '/assets/img/gallery/g' | append: i | append: '.jpg' | relative_url }}" alt="Noorderlichtfoto {{ i }}" loading="lazy">
+        <a href="{{ photo.full | relative_url }}" title="{{ photo.caption | escape }}">
+          <img src="{{ photo.thumb | relative_url }}" alt="{{ photo.caption | escape }}" width="400" height="284" loading="{% if forloop.index <= 6 %}eager{% else %}lazy{% endif %}">
+        </a>
       </figure>
       {% endfor %}
     </div>
