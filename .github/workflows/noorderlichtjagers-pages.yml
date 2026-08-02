@@ -30,6 +30,8 @@ jobs:
           ruby-version: "3.3"
           bundler-cache: true
           working-directory: noorderlichtjagers
+        env:
+          BUNDLE_PATH: vendor/bundle
       - name: Configure Pages baseurl
         id: pages
         uses: actions/configure-pages@v5
@@ -37,6 +39,7 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+          BUNDLE_PATH: vendor/bundle
       - uses: actions/upload-pages-artifact@v3
         with:
           path: noorderlichtjagers/_site

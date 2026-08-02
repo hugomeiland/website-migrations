@@ -24,7 +24,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - vendor
+  - .bundle
   - .github
+  - .ruby-version
+  - .gitignore
 
 defaults:
   - scope:
