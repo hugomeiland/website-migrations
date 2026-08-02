@@ -780,30 +780,18 @@ p { margin: 0 0 1em; }
 }
 
 /* —— FAQ —— */
-.faq-list details {
-  border-bottom: 1px solid var(--line);
-  padding: 1rem 0;
+.faq-prose {
+  max-width: 720px;
+  margin-inline: auto;
 }
-.faq-list summary {
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 16px;
+.faq-prose h3 {
   color: #333;
-  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 1.75rem 0 0.55rem;
 }
-.faq-list summary::-webkit-details-marker { display: none; }
-.faq-list summary::after {
-  content: "+";
-  float: right;
-  color: var(--accent);
-  font-weight: 700;
-}
-.faq-list details[open] summary::after { content: "–"; }
-.faq-list details p {
-  margin-top: 0.75rem;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.7;
+.faq-prose h3:first-of-type {
+  margin-top: 1.25rem;
 }
 
 /* —— Contact —— */

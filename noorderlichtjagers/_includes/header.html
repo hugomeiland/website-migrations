@@ -17,7 +17,7 @@
         <li><a href="{{ '/tips/' | relative_url }}"{% if current == '/tips/' %} class="is-active"{% endif %}>Tips</a></li>
         <li><a href="{{ '/fotos/' | relative_url }}"{% if current == '/fotos/' %} class="is-active"{% endif %}>Foto’s</a></li>
         <li><a href="{{ '/blog/' | relative_url }}"{% if current == '/blog/' or page.layout == 'post' %} class="is-active"{% endif %}>Blog</a></li>
-        <li><a href="{{ '/faq/' | relative_url }}"{% if current == '/faq/' %} class="is-active"{% endif %}>FAQ</a></li>
+        <li><a href="{{ '/veelgestelde-vragen/' | relative_url }}"{% if current == '/veelgestelde-vragen/' or current == '/faq/' %} class="is-active"{% endif %}>FAQ</a></li>
         <li><a href="{{ '/contact/' | relative_url }}"{% if current == '/contact/' %} class="is-active"{% endif %}>Contact</a></li>
       </ul>
     </nav>
