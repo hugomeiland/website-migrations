@@ -7,19 +7,26 @@ permalink: /blog/
 
 <section class="page-content">
   <div class="container">
-    <h1 class="page-content__title">Blog</h1>
-    <ul class="post-list">
+    <h1 class="page-content__title page-content__title--center"><strong>Blog</strong></h1>
+    <div class="blog-grid">
       {% for post in site.posts %}
-      <li>
+      <article class="blog-teaser">
+        <a class="blog-teaser__image" href="{{ post.url | relative_url }}">
+          <img
+            src="{{ post.image | default: '/assets/img/blog-1.jpg' | relative_url }}"
+            alt="{{ post.title | escape }}"
+            width="1080"
+            height="675"
+            loading="{% if forloop.index <= 4 %}eager{% else %}lazy{% endif %}">
+        </a>
+        <h2 class="blog-teaser__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p class="post-meta">
           {% if post.author %}door {{ post.author }} | {% endif %}
-          {{ post.date | date: '%Y-%m-%d' }}
-          {% if post.categories %} | {{ post.categories | join: ', ' }}{% endif %}
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
         </p>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
-      </li>
+        <p class="blog-teaser__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+      </article>
       {% endfor %}
-    </ul>
+    </div>
   </div>
 </section>

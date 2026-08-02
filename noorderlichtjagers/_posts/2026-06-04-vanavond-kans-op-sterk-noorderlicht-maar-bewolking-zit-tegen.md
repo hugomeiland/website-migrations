@@ -3,60 +3,11 @@ title: "Vanavond kans op sterk noorderlicht maar bewolking zit tegen"
 author: Toine Westen
 date: 2026-06-04
 categories: [alert]
-image: /assets/img/blog-2.jpg
+image: /assets/img/blog/vanavond-kans-op-sterk-noorderlicht-maar-f6570325a1.jpg
+permalink: /vanavond-kans-op-sterk-noorderlicht-maar-bewolking-zit-tegen/
 ---
 
-<div class="et_pb_section et_pb_section_0 et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_0">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_post_title et_pb_post_title_0 et_pb_bg_layout_light  et_pb_text_align_center"   >
-				
-				
-				
-				
-				
-				<div class="et_pb_title_container">
-					<h1 class="entry-title"></h1>
-				</div>
-				
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_1 et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_1">
-				<div class="et_pb_column et_pb_column_1_2 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner">Na een tijdje stilte is de zon plots actief geworden. De afgelopen dagen zijn er meerdere uitbarstingen geweest op de zon, die nu met verschillende snelheden op aarde afkomen. Het lijkt er op dat ze vannacht (4 op 5 juni) de aarde gaan bereiken en elkaar versterken waardoor er een goede kans op noorderlicht is.
+Na een tijdje stilte is de zon plots actief geworden. De afgelopen dagen zijn er meerdere uitbarstingen geweest op de zon, die nu met verschillende snelheden op aarde afkomen. Het lijkt er op dat ze vannacht (4 op 5 juni) de aarde gaan bereiken en elkaar versterken waardoor er een goede kans op noorderlicht is.
 
 Komende nacht (do/vr) is er dus kans op wat sterker noorderlicht dat hoger aan de hemel kan komen en dus in heel Nederland en België (als het helder is) te zien is vanaf een donkere plek.
 
@@ -80,8 +31,6 @@ Goede jacht 🙂
 
 De noorderlichtjagers<br />Toine, Hugo en Roy
 
-<strong></strong>
-
 <strong>P.S. Noorderlichtfoto&#8217;s, video&#8217;s en verhalen </strong><br />Als je het leuk om Toine haar (reis)verhalen over noorderlicht en natuur te lezen, meld je dan aan via deze link: <a href="https://www.fotograferenindenatuur.nl/verhalen/">https://www.fotograferenindenatuur.nl/verhalen/ </a>
 
 <strong>P.P.S. App </strong><br />Hugo heeft een noorderlicht-app gemaakt. De app geeft je een waarschuwing als er kans is op noorderlicht en je kunt er real-time metingen mee volgen voor als je wilt gaan waarnemen. Je kunt de app downloaden voor zowel iPhone als Android telefoons. De app is nog in ontwikkeling. Heb je tips of suggesties voor verbeteringen? Mail die dan naar Hugo (hugo@noorderlichtjagers.nl).
@@ -96,26 +45,4 @@ Veelgestelde vragen:<br /><strong>Hoe laat is het noorderlicht zichtbaar?<br /><
 
 <strong>Wat is de beste locatie bij mij in de buurt om te gaan kijken?<br /></strong>&gt; Jij kent de omgeving van waar je woont vast beter dan wij 😉<br />Tips waar je op kunt letten voor een goede waarneemlocatie:<br />&#8211; ga naar een donkere plek, dus met zo min mogelijk lichtvervuiling<br />&#8211; zoek een plek waar je goed zicht hebt op de noordelijke horizon<br />&#8211; om noorderlicht te kunnen zien, moet het helder zijn (tussen eventuele wolken door) met een transparante lucht<br />&#8211; bij twijfel: geen sterren zichtbaar, dan is het geen noorderlicht.
 
-<p>Heb je nog andere vragen? Kijk dan in onze FAQ op de website:  <a href="https://www.noorderlichtjagers.nl/veelgestelde-vragen/">https://www.noorderlichtjagers.nl/veelgestelde-vragen/</a>.</p></div>
-			</div>
-			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p><em>Noorderlicht boven Friesland op 5 november 2023. Fotograaf: Bauke van Dijk.</em></p></div>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div>
+<p>Heb je nog andere vragen? Kijk dan in onze FAQ op de website:  <a href="https://www.noorderlichtjagers.nl/veelgestelde-vragen/">https://www.noorderlichtjagers.nl/veelgestelde-vragen/</a>.</p>

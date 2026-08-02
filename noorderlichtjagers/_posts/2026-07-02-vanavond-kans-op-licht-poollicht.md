@@ -3,10 +3,11 @@ title: "Vanavond kans op licht poollicht"
 author: Roy Keeris
 date: 2026-07-02
 categories: [alert]
-image: /assets/img/blog-1.jpg
+image: /assets/img/blog/vanavond-kans-op-licht-poollicht-8927dffe40.jpg
+permalink: /vanavond-kans-op-licht-poollicht/
 ---
 
-<p>[et_pb_section fb_built=&#8221;1&#8243; _builder_version=&#8221;4.16&#8243; _module_preset=&#8221;default&#8221; custom_margin=&#8221;||||false|false&#8221; custom_css_main_element=&#8221;margin: 0px;||border: 0px;||padding: 0px;&#8221; global_colors_info=&#8221;{}&#8221;][et_pb_row _builder_version=&#8221;4.16&#8243; _module_preset=&#8221;default&#8221; global_colors_info=&#8221;{}&#8221;][et_pb_column type=&#8221;4_4&#8243; _builder_version=&#8221;4.16&#8243; _module_preset=&#8221;default&#8221; global_colors_info=&#8221;{}&#8221;][et_pb_post_title date=&#8221;off&#8221; categories=&#8221;off&#8221; comments=&#8221;off&#8221; featured_image=&#8221;off&#8221; _builder_version=&#8221;4.16&#8243; _module_preset=&#8221;default&#8221; title_font=&#8221;||||||||&#8221; title_text_align=&#8221;center&#8221; text_orientation=&#8221;center&#8221; custom_margin=&#8221;||||false|false&#8221; custom_padding=&#8221;||||false|false&#8221; custom_css_post_image=&#8221;padding-bottom: 30px;&#8221; global_colors_info=&#8221;{}&#8221;][/et_pb_post_title][/et_pb_column][/et_pb_row][/et_pb_section][et_pb_section fb_built=&#8221;1&#8243; _builder_version=&#8221;4.16&#8243; _module_preset=&#8221;default&#8221; global_colors_info=&#8221;{}&#8221;][et_pb_row column_structure=&#8221;1_2,1_2&#8243; _builder_version=&#8221;4.16&#8243; _module_preset=&#8221;default&#8221; global_colors_info=&#8221;{}&#8221;][et_pb_column type=&#8221;1_2&#8243; _builder_version=&#8221;4.16&#8243; _module_preset=&#8221;default&#8221; global_colors_info=&#8221;{}&#8221;][et_pb_text admin_label=&#8221;Tekst&#8221; _builder_version=&#8221;4.27.5&#8243; _module_preset=&#8221;default&#8221; hover_enabled=&#8221;0&#8243; global_colors_info=&#8221;{}&#8221; sticky_enabled=&#8221;0&#8243;]De zon heeft afgelopen dinsdag een sterke zonnevlam voorgebracht en veel geladen deeltjes de ruimte ingestuurd, ook richting de aarde. Dat is dus erg gunstig.</p>
+De zon heeft afgelopen dinsdag een sterke zonnevlam voorgebracht en veel geladen deeltjes de ruimte ingestuurd, ook richting de aarde. Dat is dus erg gunstig.</p>
 <p>Tegelijkertijd zitten we nu niet in de buurt van één van de equinoxen (lente of herfst) waardoor het magneetveld van de aarde minder reageert op de zonnestorm. Ook is de nacht kort en niet volledig donker; de astronomische schemering duurt van 00:22 tot 02:53. En later in de nacht is ook de Maan op. Die factoren werken dus niet echt mee.</p>
 <p>Al met al is er na aankomst van de CME vannacht een kans op een beetje poollicht laag boven de horizon.</p>
 <p>Qua weer, er worden vanavond opklaringen verwacht, waarvan de meeste in de zuidelijke helft van Nederland. </p>
@@ -16,7 +17,7 @@ image: /assets/img/blog-1.jpg
 <p>Mocht je eropuit gaan, houd dan rekening met andere noorderlichtjagers. Denk eraan dat je autolichten en overige lampjes anderen kunnen verblinden.</p>
 <p>Goede jacht 🙂</p>
 <p>De noorderlichtjagers<br />Toine, Hugo en Roy</p>
-<p><strong></strong></p>
+<p></p>
 <p><strong>P.S. Noorderlichtfoto&#8217;s, video&#8217;s en verhalen <br /></strong>Als je het leuk om Toine haar (reis)verhalen over noorderlicht en natuur te lezen, meld je dan aan via deze link: <a href="https://www.fotograferenindenatuur.nl/verhalen/">https://www.fotograferenindenatuur.nl/verhalen/ </a></p>
 <p><strong>P.P.S. App <br /></strong>Hugo heeft een noorderlicht-app gemaakt. De app geeft je een waarschuwing als er kans is op noorderlicht en je kunt er real-time metingen mee volgen voor als je wilt gaan waarnemen. Je kunt de app downloaden voor zowel iPhone als Android telefoons. De app is nog in ontwikkeling. Heb je tips of suggesties voor verbeteringen? Mail die dan naar Hugo (hugo@noorderlichtjagers.nl).</p>
 <p>&nbsp;</p>
@@ -25,6 +26,3 @@ image: /assets/img/blog-1.jpg
 <p><strong>Is het noorderlicht ook in mijn woonplaats zichtbaar?<br /></strong>&gt; Het is vooraf meestal niet goed in te schatten hoe zuidelijk het noorderlicht in Nederland, of zelfs België te zien is. Wij sturen een alert uit wanneer er kans is om het noorderlicht te fotograferen en/of te zien. Over het algemeen maak je de meeste kans aan de noordkust van Nederland of op de Wadden. Maar bij sterker noorderlicht kan het ook zuidellijker te zien zijn.</p>
 <p><strong>Wat is de beste locatie bij mij in de buurt om te gaan kijken?<br /></strong>&gt; Jij kent de omgeving van waar je woont vast beter dan wij 😉<br />Tips waar je op kunt letten voor een goede waarneemlocatie:<br />&#8211; ga naar een donkere plek, dus met zo min mogelijk lichtvervuiling<br />&#8211; zoek een plek waar je goed zicht hebt op de noordelijke horizon<br />&#8211; om noorderlicht te kunnen zien, moet het helder zijn (tussen eventuele wolken door) met een transparante lucht<br />&#8211; bij twijfel: geen sterren zichtbaar, dan is het geen noorderlicht.</p>
 <p>Heb je nog andere vragen? Kijk dan in onze FAQ op de website:  <a href="https://www.noorderlichtjagers.nl/veelgestelde-vragen/">https://www.noorderlichtjagers.nl/veelgestelde-vragen/</a>.</p>
-<p>[/et_pb_text][/et_pb_column][et_pb_column type=&#8221;1_2&#8243; _builder_version=&#8221;4.16&#8243; _module_preset=&#8221;default&#8221; global_colors_info=&#8221;{}&#8221;][et_pb_text _builder_version=&#8221;4.27.5&#8243; _module_preset=&#8221;default&#8221; global_colors_info=&#8221;{}&#8221;]</p>
-<p><em>Noorderlicht op 16 april 2024 vanuit De Bilt. Fotograaf: Roy Keeris.</em></p>
-<p>[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section]</p>
