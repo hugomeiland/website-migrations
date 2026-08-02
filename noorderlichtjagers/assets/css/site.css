@@ -431,48 +431,97 @@ p { margin: 0 0 1em; }
   .team-band { padding: 48px 0; }
 }
 
+/* —— Media logos —— */
+.media-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+.media-logos img {
+  max-height: 64px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(0.15);
+}
+@media (max-width: 900px) {
+  .media-logos { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 520px) {
+  .media-logos { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* —— Quick tiles —— */
 .tile-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+.tile-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
 @media (max-width: 900px) {
-  .tile-grid { grid-template-columns: repeat(2, 1fr); }
+  .tile-grid,
+  .tile-grid--3 { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 520px) {
-  .tile-grid { grid-template-columns: 1fr; }
+  .tile-grid,
+  .tile-grid--3 { grid-template-columns: 1fr; }
 }
 
 .tile {
   display: flex;
-  align-items: flex-end;
-  min-height: 200px;
-  padding: 1.5rem 1.25rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 100px 1.25rem;
   background-size: cover;
   background-position: center;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   color: #fff;
   position: relative;
+  text-align: center;
 }
 .tile::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,4,61,0.45);
+  background: rgba(0,4,61,0.35);
   transition: background 0.25s;
 }
 .tile:hover::before { background: rgba(129,215,66,0.45); }
 .tile span { position: relative; z-index: 1; color: #fff; }
 
+.home-forecast { padding-top: 0; }
+
 /* —— Travel CTA —— */
+.cta-band {
+  position: relative;
+  background: var(--mist) center/cover no-repeat;
+  padding: 72px 0;
+}
+.cta-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,4,61,0.45);
+}
+.cta-band .container { position: relative; z-index: 1; }
 .cta-block {
   text-align: center;
   max-width: 40rem;
   margin-inline: auto;
+}
+.cta-block--on-photo h2,
+.cta-block--on-photo p { color: #fff; }
+.cta-block--on-photo h2 {
+  text-transform: uppercase;
+  font-size: 26px;
 }
 .btn {
   display: inline-block;

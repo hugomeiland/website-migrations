@@ -40,14 +40,18 @@ permalink: /
     <div class="home-col">
       <h2>Kp komende drie dagen</h2>
       <figure class="kp-figure">
-        <img src="https://cdn.polarlicht-vorhersage.de/kp_mid.png" alt="Kp-verwachting polarlicht-vorhersage" loading="lazy">
+        <a href="https://cdn.polarlicht-vorhersage.de/kp_high.png" rel="noopener">
+          <img src="https://cdn.polarlicht-vorhersage.de/kp_high.png" alt="Kp-verwachting rond de poolcirkel" loading="lazy">
+        </a>
       </figure>
       <p class="home-col__note">De verwachte Kp voor de komende drie dagen in het gebied <strong>rond de poolcirkel</strong>. De Kp is een mate van verstoring van het geomagnetisch veld. Hoe meer storing, hoe groter de kans op poollicht en de intensiteit ervan. Groen = laag, rood/paars = hoog.</p>
-      <p class="home-col__note">De verwachte Kp voor de komende drie dagen op onze breedte. De Kp is een mate van verstoring van het geomagnetisch veld. Hoe meer storing, hoe groter de kans op poollicht en de intensiteit ervan. Groen = laag, rood/paars = hoog.</p>
+      <figure class="kp-figure">
+        <a href="https://cdn.polarlicht-vorhersage.de/kp_mid.png" rel="noopener">
+          <img src="https://cdn.polarlicht-vorhersage.de/kp_mid.png" alt="Kp-verwachting op onze breedte" loading="lazy">
+        </a>
+      </figure>
+      <p class="home-col__note">De verwachte Kp voor de komende drie dagen <strong>op onze breedte</strong>. De Kp is een mate van verstoring van het geomagnetisch veld. Hoe meer storing, hoe groter de kans op poollicht en de intensiteit ervan. Groen = laag, rood/paars = hoog.</p>
       <p class="home-col__note"><em>De diagrammen komen van de website Polarlicht-vorhersage für Deutschland. De data komen van het NOAA Space Weather Prediction Center in Boulder, in de VS.</em></p>
-      <div class="chart-wrap chart-wrap--compact">
-        <canvas id="kp-chart" data-base="{{ site.baseurl }}" height="100" aria-label="Kp-verwachting grafiek"></canvas>
-      </div>
     </div>
 
     <div class="home-col">
@@ -69,8 +73,9 @@ permalink: /
     <div class="home-col">
       <h2>Laatste nieuws via Twitter</h2>
       <p class="twitter-fallback">
-        <a href="{{ site.social.twitter }}" rel="noopener">Tweets by Noorderlichtja1</a>
+        <a class="twitter-timeline" data-width="350" data-height="1000" href="{{ site.social.twitter }}">Tweets by Noorderlichtja1</a>
       </p>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 </section>
@@ -89,25 +94,56 @@ permalink: /
   </div>
 </section>
 
-<section class="section section--white">
+<section class="section section--mist">
   <div class="container">
-    <h2 class="section-title section-title--left">Ga direct naar ››</h2>
-    <div class="tile-grid">
-      <a class="tile" href="{{ '/noorderlicht/' | relative_url }}" style="background-image:url('{{ '/assets/img/tile-noorderlicht.jpg' | relative_url }}')"><span>Noorderlicht</span></a>
-      <a class="tile" href="{{ '/tips/' | relative_url }}" style="background-image:url('{{ '/assets/img/tile-tips.jpg' | relative_url }}')"><span>Tips</span></a>
-      <a class="tile" href="{{ '/monitor/' | relative_url }}" style="background-image:url('{{ '/assets/img/tile-monitor.jpg' | relative_url }}')"><span>Monitor</span></a>
-      <a class="tile" href="{{ '/tips/' | relative_url }}#reizen" style="background-image:url('{{ '/assets/img/tile-reizen.jpg' | relative_url }}')"><span>Lange termijn verwachting</span></a>
-    </div>
-    <p class="home-col__note" style="margin-top:1.25rem;max-width:46rem">Visuele weergave van de verwachte Kp-waarden voor de komende tijd. De grijsomlijnde balkjes geven de 45-dagen verwachting weer met een gemiddelde Kp-waarde per dag. De gekleurde balkjes tonen de maximaal verwachte Kp-waarde per dag. Deze data worden elke maandag vrijgegeven en geven daardoor een vooruitzicht van 20 tot 27 dagen. Kp ≤ 3, Kp = 4, Kp ≥ 5. Deze grafieken zijn gebaseerd op data van het NOAA Space Weather Prediction Center in Boulder, VS en de U.S. Air Force via voornoemde website.</p>
+    <h2 class="section-title section-title--left">In de media ››</h2>
+    <a class="media-logos" href="{{ '/in-de-media/' | relative_url }}">
+      <img src="{{ '/assets/img/media/HetWeerMagazine-logo.jpg' | relative_url }}" alt="Het Weer Magazine" loading="lazy">
+      <img src="{{ '/assets/img/media/HetParool-logo.jpg' | relative_url }}" alt="Het Parool" loading="lazy">
+      <img src="{{ '/assets/img/media/Weerspiegeld-HarryGeurts-crop.jpg' | relative_url }}" alt="Weerspiegeld" loading="lazy">
+      <img src="{{ '/assets/img/media/Weerplaza-logo.jpg' | relative_url }}" alt="Weerplaza" loading="lazy">
+      <img src="{{ '/assets/img/media/Zenit-logo-facebook.jpg' | relative_url }}" alt="Zenit" loading="lazy">
+      <img src="{{ '/assets/img/media/NOS_logo.png' | relative_url }}" alt="NOS" loading="lazy">
+      <img src="{{ '/assets/img/media/anwb-logo.jpg' | relative_url }}" alt="ANWB" loading="lazy">
+      <img src="{{ '/assets/img/media/NPO_Radio_1_logo.png' | relative_url }}" alt="NPO Radio 1" loading="lazy">
+      <img src="{{ '/assets/img/media/artworks-podcast.jpg' | relative_url }}" alt="Podcast" loading="lazy">
+      <img src="{{ '/assets/img/media/RTLNieuws.png' | relative_url }}" alt="RTL Nieuws" loading="lazy">
+      <img src="{{ '/assets/img/media/Logo_RTV_Drenthe.png' | relative_url }}" alt="RTV Drenthe" loading="lazy">
+      <img src="{{ '/assets/img/media/Jeugdjournaal_logo.jpg' | relative_url }}" alt="Jeugdjournaal" loading="lazy">
+      <img src="{{ '/assets/img/media/ElsevierWeekblad.png' | relative_url }}" alt="Elsevier Weekblad" loading="lazy">
+      <img src="{{ '/assets/img/media/OmroepWest.png' | relative_url }}" alt="Omroep West" loading="lazy">
+      <img src="{{ '/assets/img/media/Radio-Veronica-logo.png' | relative_url }}" alt="Radio Veronica" loading="lazy">
+    </a>
   </div>
 </section>
 
-<section class="section section--mist">
+<section class="section section--white">
   <div class="container">
-    <div class="cta-block">
+    <h2 class="section-title section-title--left">Ga direct naar ››</h2>
+    <div class="tile-grid tile-grid--3">
+      <a class="tile" href="{{ '/noorderlicht/' | relative_url }}" style="background-image:url('{{ '/assets/img/tile-noorderlicht.jpg' | relative_url }}')"><span>Noorderlicht</span></a>
+      <a class="tile" href="{{ '/tips/' | relative_url }}" style="background-image:url('{{ '/assets/img/tile-tips.jpg' | relative_url }}')"><span>Tips</span></a>
+      <a class="tile" href="{{ '/monitor/' | relative_url }}" style="background-image:url('{{ '/assets/img/tile-monitor.jpg' | relative_url }}')"><span>Monitor</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white home-forecast">
+  <div class="container">
+    <h2 class="section-title section-title--left">Lange termijn verwachting</h2>
+    <div class="chart-wrap">
+      <canvas id="kp-chart" data-base="{{ site.baseurl }}" height="100" aria-label="Kp-verwachting grafiek"></canvas>
+    </div>
+    <p class="home-col__note" style="margin-top:1.25rem;max-width:46rem">Visuele weergave van de verwachte Kp-waarden voor de komende tijd. De grijsomlijnde balkjes geven de 45-dagen verwachting weer met een gemiddelde Kp-waarde per dag. De gekleurde balkjes tonen de maximaal verwachte Kp-waarde per dag. Deze data worden elke maandag vrijgegeven en geven daardoor een vooruitzicht van 20 tot 27 dagen. Kp ≤ 3, Kp = 4, Kp ≥ 5. Deze grafieken zijn gebaseerd op data van het <a href="https://www.swpc.noaa.gov/" rel="noopener">NOAA Space Weather Prediction Center</a> in Boulder, VS en de U.S. Air Force via voornoemde website.</p>
+  </div>
+</section>
+
+<section class="cta-band" style="background-image:url('{{ '/assets/img/cta-reizen.jpg' | relative_url }}')">
+  <div class="container">
+    <div class="cta-block cta-block--on-photo">
       <h2>Noorderlichtreizen</h2>
       <p>Wil jij je kansen op het zien van noorderlicht vergroten door naar het hoge noorden te reizen? En lijkt het je heerlijk om je een paar dagen helemaal onder te dompelen in ruige natuur en fotografie? Ga dan mee op avontuur met noorderlichtjager Toine Westen en een kleine groep (van maximaal vijf) gelijkgestemden!</p>
-      <a class="btn" href="https://www.fotograferenindenatuur.nl/" rel="noopener">Klik op deze knop om verder te lezen ››</a>
+      <a class="btn" href="https://www.fotograferenindenatuur.nl/fotoreizen/" rel="noopener">Klik op deze knop om verder te lezen ››</a>
     </div>
   </div>
 </section>
