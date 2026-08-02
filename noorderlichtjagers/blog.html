@@ -5,25 +5,19 @@ description: Blogartikelen over noorderlicht en aurora-alerts.
 permalink: /blog/
 ---
 
-<section class="page-hero">
+<section class="page-content">
   <div class="container">
-    <h1>Blog</h1>
-    <p>Alerts en verhalen over het noorderlicht.</p>
-  </div>
-</section>
-
-<section class="section section--white">
-  <div class="container narrow">
+    <h1 class="page-content__title">Blog</h1>
     <ul class="post-list">
       {% for post in site.posts %}
       <li>
         <p class="post-meta">
-          {% if post.author %}{{ post.author }} · {% endif %}
+          {% if post.author %}door {{ post.author }} | {% endif %}
           {{ post.date | date: '%Y-%m-%d' }}
-          {% if post.categories %} · {{ post.categories | join: ', ' }}{% endif %}
+          {% if post.categories %} | {{ post.categories | join: ', ' }}{% endif %}
         </p>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
       </li>
       {% endfor %}
     </ul>

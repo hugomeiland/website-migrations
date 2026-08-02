@@ -2,12 +2,12 @@
 layout: default
 ---
 <article class="post-single">
-  <div class="container narrow">
+  <div class="container">
     <header class="post-header">
       <p class="post-meta">
-        {% if page.author %}{{ page.author }} · {% endif %}
-        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d-%m-%Y' }}</time>
-        {% if page.categories %} · {{ page.categories | join: ', ' }}{% endif %}
+        {% if page.author %}door {{ page.author }} | {% endif %}
+        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y-%m-%d' }}</time>
+        {% if page.categories %} | {{ page.categories | join: ', ' }}{% endif %}
       </p>
       <h1>{{ page.title }}</h1>
     </header>

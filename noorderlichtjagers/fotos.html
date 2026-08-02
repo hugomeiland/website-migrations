@@ -1,26 +1,20 @@
 ---
 layout: default
 title: Foto’s
-description: Selectie noorderlichtfoto’s van de noorderlichtjagers.
+description: Selectie noorderlichtfoto’s van de noorderlichtjagers en inzenders.
 permalink: /fotos/
 ---
 
-<section class="page-hero">
+<section class="page-content">
   <div class="container">
-    <h1>Foto’s</h1>
-    <p>Een kleine selectie — vul deze pagina aan met je eigen galerij of embeds.</p>
-  </div>
-</section>
-
-<section class="section section--white">
-  <div class="container">
+    <h1 class="page-content__title">Foto’s</h1>
+    <p style="max-width:40rem;margin-bottom:1.5rem;color:#666">Een selectie noorderlichtfoto’s — van sterke stormen tot subtiele gloed boven de Nederlandse horizon.</p>
     <div class="photo-grid">
-      <img src="{{ '/assets/img/tile-noorderlicht.jpg' | relative_url }}" alt="Noorderlicht" loading="lazy">
-      <img src="{{ '/assets/img/tile-tips.jpg' | relative_url }}" alt="Paarse rand noorderlicht" loading="lazy">
-      <img src="{{ '/assets/img/tile-monitor.jpg' | relative_url }}" alt="Noorderlicht boven meer" loading="lazy">
-      <img src="{{ '/assets/img/tile-reizen.jpg' | relative_url }}" alt="Noorderlichtreis" loading="lazy">
-      <img src="{{ '/assets/img/team-bg.jpg' | relative_url }}" alt="Aurora landschap" loading="lazy">
-      <img src="{{ '/assets/img/blog-1.jpg' | relative_url }}" alt="Noorderlicht alert foto" loading="lazy">
+      {% for i in (1..12) %}
+      <figure>
+        <img src="{{ '/assets/img/gallery/g' | append: i | append: '.jpg' | relative_url }}" alt="Noorderlichtfoto {{ i }}" loading="lazy">
+      </figure>
+      {% endfor %}
     </div>
   </div>
 </section>
